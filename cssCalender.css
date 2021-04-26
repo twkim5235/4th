@@ -1,0 +1,292 @@
+li
+{
+    list-style-type: none;
+}
+body
+{
+    margin: 0px;
+}
+
+.container
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.head
+{
+    display: flex;
+    height: 5%;
+    border-bottom: #000 1px;
+    background-color: fff;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.head button
+{
+    height: 100%;
+    background-color: white;
+    border: 0px;
+    outline: 0px;
+    transition: all ease 0.5s;
+}
+
+.head button:hover
+{
+    background-color: lightblue;
+    color: white;
+}
+
+.head .colorchangeButton
+{
+  display: flex;
+}
+
+.head .grayB
+{
+    height: 36px;
+    width: 36px;
+    margin: 5px;
+    border: 0px;
+    outline: 0px;
+    border-radius: 50%;
+    background-color: gray;
+    transition: all ease 0.5s;
+}
+
+.head .grayB:hover
+{
+    transform: scale(1.1);
+}
+
+.head .blueB
+{
+    height: 36px;
+    width: 36px;
+    margin: 5px;
+    border: 0px;
+    outline: 0px;
+    border-radius: 50%;
+    background-color: lightblue;
+    transition: all ease 0.5s;
+}
+
+.head .blueB:hover
+{
+    transform: scale(1.1);
+}
+
+
+
+.contents
+{
+    display: flex;
+    height: 74%;
+}
+
+.calender
+{
+    display: flex;
+    flex-grow: 3;
+    background-color: dodgerblue;
+    flex-direction: column;
+}
+
+.month
+{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    border-right: gray 2px solid;
+    background-color: #fff;
+}
+
+.month input[type = button]
+{
+    height: 30px;
+    width: 30px;
+    outline: 0px;
+    border: 0px;
+    transition: all ease 0.5s;
+    margin: 20px;
+}
+
+.month input[type = button]:hover
+{
+    transform: scale(1.2);
+}
+
+.month .data
+{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    font-size: 17px;
+    color: black;
+}
+
+.day
+{
+    display: flex;
+    flex-grow: 5;
+    background-color: #fff;
+    border-top: gray 2px solid;
+    border-right: gray 2px solid;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.day .ho
+{
+    flex-grow: 1;
+    height: 40px;
+}
+
+.day .ha
+{
+    flex-grow: 4;
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+    padding-right: 40px;
+    
+}
+
+.day li
+{
+    display: inline-block;
+    flex-basis: 14%;
+    text-align: center;
+    font-style: normal;
+}
+
+.day .ha li
+{
+    display: inline-block;
+    flex-basis: 14%;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 17px;
+    transition: all ease 0.3s;
+}
+
+.day .ha li:hover
+{
+    background-color: lightblue;
+    color: white;
+}
+
+.diff
+{
+    opacity: 0.5
+}
+
+.weekend
+{
+    color:red;
+}
+
+.common
+{
+    color: black;
+}
+
+.work
+{
+    display: flex;
+    max-width: 292.13px;
+    min-width: 292.13px;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.task
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60.5px;
+    max-height: 60.5px;
+    border-bottom: gray 2px solid;
+}
+
+.details
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.detail
+{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin: 4px;
+    border-bottom: gray 2px solid;
+    
+}
+
+.detail .plusButton
+{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    border: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    transition: all ease 0.5s;
+}
+
+.detail .plusButton:hover
+{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    
+}
+
+.detail .removeButton
+{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    border: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    transition: all ease 0.5s;
+}
+
+.detail .removeButton:hover
+{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    
+}
+
+.detail .inputText
+{
+    flex-grow: 1;
+    border: 0px;
+    outline: 0px;
+    text-overflow: ellipsis;
+}
+
+.footer
+{
+    display: flex;
+    height: 20%;
+    background-color: #fff;
+}
+

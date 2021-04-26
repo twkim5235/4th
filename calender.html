@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head lang="ko">
+        <title>달력</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="cssCalender.css">
+        <link rel="stylesheet" href="common.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="head" role="heading">
+                <button onclick="logOut()">Log Out</button>
+                <div class = "colorchangeButton">
+                <!-- <input type="button" onclick="getDateE()" value="get"></input> -->
+                <!-- <input type="button" onclick="deleteDetail()" value="delete"></input> -->
+                <input type="button" class="grayB" onclick="changeRed()"></input>
+                <input type="button" class="blueB" onclick="changelBlue()"></input>
+                </div>    
+            </div>
+
+            <div class="contents" role="main">
+                <div class="calender">
+                    <div class="month">
+                        <input type="button" class="lightblue" onclick="prevMonth()"></button>
+                        <span class="data"></span>
+                        <input type="button" class="lightblue" onclick="nextMonth()"></button>
+                    </div>
+                    <div class="day">
+                        <div class = "ho">
+                            <ul >
+                                <li class="diff">SUN</li>
+                                <li class="diff">MON</li>
+                                <li class="diff">TUE</li>
+                                <li class="diff">WED</li>
+                                <li class="diff">THU</li>
+                                <li class="diff">FRI</li>
+                                <li class="diff">SAT</li>
+                            </ul>
+                        </div>
+                        <div class="ha">
+                            <ul>
+                                <li class="diff weekend">28</li>
+                                <li class="diff">29</li>
+                                <li class="diff">30</li>
+                                <li class="diff">31</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                            </ul>
+                            <ul>
+                                <li class="weekend">4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                            </ul>
+                            <ul>
+                                <li class="weekend">11</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                                <li>15</li>
+                                <li>16</li>
+                                <li>17</li>
+                            </ul>
+                            <ul>
+                                <li class="weekend">18</li>
+                                <li>19</li>
+                                <li>20</li>
+                                <li>21</li>
+                                <li>22</li>
+                                <li>23</li>
+                                <li>24</li>
+                            </ul>
+                            <ul>
+                                <li class="weekend">25</li>
+                                <li>26</li>
+                                <li>27</li>
+                                <li>28</li>
+                                <li>29</li>
+                                <li>30</li>
+                                <li class="diff">1</li>
+                            </ul>
+                            <ul>
+                                <li class="diff weekend">2</li>
+                                <li class="diff">3</li>
+                                <li class="diff">4</li>
+                                <li class="diff">5</li>
+                                <li class="diff">6</li>
+                                <li class="diff">7</li>
+                                <li class="diff">8</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class = "work" onclick="insert(event)">
+                    <div class="task lightblue">
+                        <span> TASK </span>
+                    </div>
+                    <div class="details">
+                        <li class = "works">
+                            <!-- <div class = "detail"> -->
+                                <!-- <input type = "button" class = "plusButton" onclick="insert(event)"> -->
+                                <!-- <input type="checkbox"> -->
+                                <!-- <input type="text" class="inputText" onkeydown="downEnter(event)"> -->
+                                <!-- <input type = "button" class = "removeButton" onclick="remove()"> -->
+                            <!-- </div> -->
+                        </li>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer" role="contentinfo">
+
+            </div>
+        </div>
+
+        
+
+        <script type="text/javascript" src="calender.js">
+        </script> 
+    </body>
+</html>
